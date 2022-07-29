@@ -34,4 +34,8 @@ docker images # 183 M or 50 M compress  standard node image
 
 # npm ci - not npm install. It uses/requires package-lock.json
 npm ci
+
+# multi stage build - slim 240 M vs 995 M for standard
+docker build -t carltonj2000/node-exe1-min-docker .
+docker run -p 3003:3003 -t carltonj2000/node-exe1-min-docker
 ```
