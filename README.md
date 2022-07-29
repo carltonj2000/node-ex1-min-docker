@@ -26,4 +26,9 @@ npm add -D jest
 docker build -t carltonj2000/node-exe1-min-docker .
 docker ls
 npm add moment response-time
+
+# build with alpine
+ docker build -t carltonj2000/node-exe1-min-docker-alpine .
+docker images # 955 M or 350 M compressed for standard node image
+docker images # 183 M or 50 M compress  standard node image
 ```
