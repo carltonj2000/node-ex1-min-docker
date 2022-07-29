@@ -4,7 +4,7 @@
 
 The code in this repository is based on the
 [Docker And Node](https://youtu.be/FFAWp9qoX4M)
-video.
+video. It is a series.
 
 ```bash
 mkdir node-exe1-min-docker
@@ -31,4 +31,7 @@ npm add moment response-time
  docker build -t carltonj2000/node-exe1-min-docker-alpine .
 docker images # 955 M or 350 M compressed for standard node image
 docker images # 183 M or 50 M compress  standard node image
+
+# npm ci - not npm install. It uses/requires package-lock.json
+npm ci
 ```
